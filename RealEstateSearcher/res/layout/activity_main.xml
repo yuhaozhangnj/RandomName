@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="yuhao.realestatesearcher.MainActivity"
+    android:background="@drawable/bgimage" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/head_text"
+        android:textColor="#FFF"
+        android:id="@+id/head_textid"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:layout_below="@+id/head_textid"
+        android:id="@+id/break_1"
+  		android:layout_width="fill_parent"
+  		android:layout_height="15sp"/>
+    
+    <TextView
+        android:layout_below="@+id/break_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address_text"
+        android:textColor="#FFF"
+        android:id="@+id/address_textid"
+        android:textSize="15sp" />
+    
+    <EditText
+        android:layout_below="@+id/address_textid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/boxAddress"
+        android:hint="@string/Street_Address"
+        android:singleLine="true"
+        android:inputType="textCapWords"
+        android:background="@drawable/input_box_shape"/>
+    
+    <TextView
+        android:layout_below="@+id/boxAddress"
+        android:id="@+id/break_2"
+        android:textColor="#ff0000"
+  		android:layout_width="fill_parent"
+  		android:layout_height="20sp"/>
+    
+    <TextView
+        android:layout_below="@+id/break_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/city_text"
+        android:textColor="#FFF"
+        android:id="@+id/city_textid"
+        android:textSize="20sp" />
+    
+    <EditText
+        android:layout_below="@+id/city_textid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/boxCity"
+        android:hint="@string/City_Address"
+        android:singleLine="true"
+        android:inputType="textCapWords"
+        android:background="@drawable/input_box_shape"/>
+    
+    <TextView
+        android:layout_below="@+id/boxCity"
+        android:id="@+id/break_3"
+        android:textColor="#ff0000"
+  		android:layout_width="fill_parent"
+  		android:layout_height="20sp"/>
+    
+    <TextView
+        android:layout_below="@+id/break_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/state_text"
+        android:textColor="#FFF"
+        android:id="@+id/state_textid"
+        android:textSize="20sp" />
+    
+    
+    
+    <Spinner
+        android:layout_below="@+id/state_textid"
+    	android:id="@+id/boxState"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/input_box_shape" />
+    
+    <TextView
+        android:layout_below="@+id/boxState"
+        android:id="@+id/break_4"
+        android:textColor="#ff0000"
+  		android:layout_width="fill_parent"
+  		android:layout_height="20sp"/>
+    
+    <Button
+        android:layout_below="@+id/break_4"
+        android:id="@+id/boxSearch"
+     	android:layout_height="wrap_content"
+     	android:layout_width="wrap_content"
+     	android:text="@string/search_text"
+     	android:textAllCaps="false"
+     	android:onClick="sendMessage" />
+    
+    <ImageView
+        android:layout_below="@+id/break_4"
+        android:id="@+id/zillowImage"
+        android:contentDescription="@string/zillowDesc"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/zillowlogo" />
+    
+    <TextView
+        android:layout_below="@+id/boxSearch"
+        android:id="@+id/break_5"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:gravity="center_horizontal"/>
+
+</RelativeLayout>
